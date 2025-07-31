@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Girlfriends Day, Mehar Baby!</title>
+    <!-- Tailwind CSS CDN for easy styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom styles for the falling hearts and overall layout */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+        body {
+            font-family: 'Inter', sans-serif;
+            overflow-x: hidden; /* Prevent horizontal scroll */
+            background-color: #fce7f3; /* Light pink background */
+        }
+
+        .page-section {
+            min-height: 100vh; /* Each section takes full viewport height */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 2rem;
+            text-align: center;
+            position: relative; /* For heart animation positioning */
+            overflow: hidden; /* Hide hearts outside the section */
+            background-color: #fce7f3; /* Consistent pink background for all sections */
+            border-radius: 0; /* Remove rounded corners from sections if body is already rounded */
+            margin: 0; /* Remove margin from sections if body is already rounded */
+            box-shadow: none; /* Remove shadow from sections if body is already rounded */
+        }
+
+        .heart-container {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none; /* Allow clicks to pass through */
+            overflow: hidden;
+            z-index: 10; /* Hearts should be on top of content */
+        }
+
+        .heart {
+            position: absolute;
+            color: #ec4899; /* Pink heart color */
+            font-size: 2rem;
+            animation: fall linear infinite;
+            opacity: 0; /* Start invisible */
+            text-shadow: 0 0 5px rgba(0,0,0,0.1);
+        }
+
+        @keyframes fall {
+            0% {
+                transform: translateY(-10vh) translateX(0);
+                opacity: 0;
+            }
+            10% {
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(100vh) translateX(var(--x-offset, 0));
+                opacity: 0;
+            }
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .page-section {
+                padding: 1rem;
+            }
+            .text-5xl {
+                font-size: 2.5rem; /* Smaller heading on mobile */
+            }
+            .text-2xl {
+                font-size: 1.25rem; /* Smaller text on mobile */
+            }
+            .heart {
+                font-size: 1.5rem; /* Smaller hearts on mobile */
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Page 1: Happy Girlfriends Day, Mehar Baby! -->
+    <section id="page1" class="page-section">
+        <div class="heart-container"></div>
+        <h1 class="text-5xl md:text-6xl font-extrabold text-pink-600 mb-4 animate-bounce">
+            HAPPY GIRLFRIENDS DAY MEHAR BABY <span class="text-red-500">💖</span>
+        </h1>
+        <p class="text-xl md:text-2xl text-gray-700 max-w-2xl">
+            (I told you not to keep your expectations high but okay, read this now)
+        </p>
+    </section>
+
+    <!-- Page 2: Main Anniversary Message for Mehar -->
+    <section id="page2" class="page-section">
+        <div class="heart-container"></div>
+        <h2 class="text-4xl md:text-5xl font-bold text-purple-700 mb-6">
+            Happy Girlfriends Day
+        </h2>
+        <p class="text-lg md:text-xl text-gray-800 leading-relaxed max-w-4xl text-left">
+            HAPPY GIRLFRIENDS DAY TO THE MOST BEAUTIFUL GIRL WHO MADE MY LIFE FEEL LIKE A DREAM YOU CALL ME CUTU BUT YOU ARE THE REAL CUTU WHO MAKES EVERYTHING BETTER JUST BY EXISTING ITS BEEN 168 DAYS WITH YOU AND HONESTLY IT FEELS LIKE NOTHING BECAUSE TIME FLIES WHEN IM WITH YOU EVERY MOMENT WITH YOU FEELS SO LIGHT SO PURE SO EASYGOING YOU TAKE CARE OF ME LIKE MY MOM YOU SCOLD ME WHEN I ACT STUPID YOU MAKE SURE I EAT REST SMILE AND BE OKAY EVEN WHEN YOURE NOT SOMETIMES YOU DONT LISTEN TO ME AND SOMETIMES YOU ARGUE FOR NO REASON BUT EVEN THEN I FIND YOU CUTE EVEN WHEN YOURE MAD AND WHEN I SEE TEARS IN YOUR EYES IT BREAKS ME BECAUSE I NEVER EVER WANNA SEE YOU SAD YOU DESERVE ALL THE HAPPINESS IN THIS WORLD YOU DESERVE TO BE HELD TO BE LOVED TO BE PROTECTED TO BE CHERISHED FOREVER AND I PROMISE ILL DO THAT ILL BE YOUR CUTU YOUR BEST FRIEND YOUR HOME YOUR PEACE YOUR PERSON FOREVER YOU ARE NOT JUST A PART OF MY LIFE YOU ARE THE MOST BEAUTIFUL CHAPTER AND I WANNA KEEP WRITING THIS STORY WITH YOU TILL FOREVER ENDS
+            <br><br>
+            BABES YOU KNOW WHENEVER I COME TIRED HOME AND I JUST SIT JUST LOOKING AT MY PHONE SEEING YOUR PICTURE AND SMILING LIKE HOCHIIIIII LIKE A PAGAL BHAI CAN'T STOP SMILING KIND OF SMILE BECAUSE IT'S YOUR FACE MY CUTUUU REMEMBER THAT TIME YOU GAVE ME THE MIDDLE FINGER WHEN WE WERE FIGHTING ABOUT SOMETHING SILLY EVEN THEN EVEN WHEN YOU'RE BEING A BIT STUBBORN AND FIERY MY HEART JUST MELTS BECAUSE IT'S YOU IT'S ALL THE SMALL PERFECT THINGS THAT MAKE YOU YOU YOU MAKE ME LAUGH SO HARD MY STOMACH HURTS YOU MAKE ME FEEL LIKE I CAN DO ANYTHING AND YOU MAKE ME BELIEVE IN ALL THE GOOD STUFF IN THE WORLD BEFORE YOU IT FELT LIKE PART OF MY LIFE WAS MISSING AND NOW EVERYTHING IS BRIGHT AND SO BEAUTIFUL I REALLY HOLD ONTO THE ONES THAT REMIND ME HOW LUCKY I AM YOU'RE NOT JUST MY GIRLFRIEND YOU'RE MY BEST FRIEND SOMETIMES JUST THINKING ABOUT HOW AMAZING YOU ARE I DON'T KNOW WHAT I DID TO GET SOMEONE AS INCREDIBLE AS BEAUTIFUL AS COMPLETELY YOU AS YOU ARE JUST THINKING ABOUT IT MY EYES ARE GETTING WET HONESTLY YOU'RE EVERYTHING I DIDN'T KNOW I NEEDED AND NOW I CAN'T LIVE WITHOUT YOU SO YEAH I LOVE YOU YAAR I LOVE YOU MORE THAN I CAN EVEN SAY MY HOCHIIIIII AND I CAN'T WAIT FOR ALL THE OTHER 168 DAYS AND SO MANY MORE RIGHT HERE WITH YOU
+        </p>
+    </section>
+
+    <!-- Reason 1 -->
+    <section id="reason1" class="page-section">
+        <div class="heart-container"></div>
+        <h3 class="text-3xl md:text-4xl font-semibold text-indigo-700 mb-4">
+            1. You understand me without words
+        </h3>
+    </section>
+
+    <!-- Reason 2 -->
+    <section id="reason2" class="page-section">
+        <div class="heart-container"></div>
+        <h3 class="text-3xl md:text-4xl font-semibold text-pink-700 mb-4">
+            2. Your eyes hold a world where I feel safe
+        </h3>
+    </section>
+
+    <!-- Reason 3 -->
+    <section id="reason3" class="page-section">
+        <div class="heart-container"></div>
+        <h3 class="text-3xl md:text-4xl font-semibold text-purple-700 mb-4">
+            3. You are my biggest comfort
+        </h3>
+    </section>
+
+    <!-- Reason 4 -->
+    <section id="reason4" class="page-section">
+        <div class="heart-container"></div>
+        <h3 class="text-3xl md:text-4xl font-semibold text-blue-700 mb-4">
+            4. You make little things magical
+        </h3>
+    </section>
+
+    <!-- Reason 5 -->
+    <section id="reason5" class="page-section">
+        <div class="heart-container"></div>
+        <h3 class="text-3xl md:text-4xl font-semibold text-green-700 mb-4">
+            5. You are the reason I smile randomly
+        </h3>
+    </section>
+
+    <!-- Reason 6 -->
+    <section id="reason6" class="page-section">
+        <div class="heart-container"></div>
+        <h3 class="text-3xl md:text-4xl font-semibold text-yellow-700 mb-4">
+            6. You love me in ways I never imagined I deserved
+        </h3>
+    </section>
+
+    <!-- Reason 7 -->
+    <section id="reason7" class="page-section">
+        <div class="heart-container"></div>
+        <h3 class="text-3xl md:text-4xl font-semibold text-red-700 mb-4">
+            7. You truly listen to me
+        </h3>
+    </section>
+
+    <!-- Reason 8 -->
+    <section id="reason8" class="page-section">
+        <div class="heart-container"></div>
+        <h3 class="text-3xl md:text-4xl font-semibold text-indigo-700 mb-4">
+            8. You are strong even when you feel weak
+        </h3>
+    </section>
+
+    <!-- Reason 9 -->
+    <section id="reason9" class="page-section">
+        <div class="heart-container"></div>
+        <h3 class="text-3xl md:text-4xl font-semibold text-pink-700 mb-4">
+            9. You believe in me when I don’t
+        </h3>
+    </section>
+
+    <!-- Reason 10 -->
+    <section id="reason10" class="page-section">
+        <div class="heart-container"></div>
+        <h3 class="text-3xl md:text-4xl font-semibold text-purple-700 mb-4">
+            10. You make me want to be better
+        </h3>
+    </section>
+
+    <!-- Reason 11 -->
+    <section id="reason11" class="page-section">
+        <div class="heart-container"></div>
+        <h3 class="text-3xl md:text-4xl font-semibold text-blue-700 mb-4">
+            11. You are my peace and my chaos
+        </h3>
+    </section>
+
+    <!-- Reason 12 -->
+    <section id="reason12" class="page-section">
+        <div class="heart-container"></div>
+        <h3 class="text-3xl md:text-4xl font-semibold text-green-700 mb-4">
+            12. You are mine and I am yours
+        </h3>
+    </section>
+
+    <!-- Reason 13 -->
+    <section id="reason13" class="page-section">
+        <div class="heart-container"></div>
+        <h3 class="text-3xl md:text-4xl font-semibold text-yellow-700 mb-4">
+            13. You feel like home every time I hold you
+        </h3>
+    </section>
+
+    <!-- Reason 14 -->
+    <section id="reason14" class="page-section">
+        <div class="heart-container"></div>
+        <h3 class="text-3xl md:text-4xl font-semibold text-red-700 mb-4">
+            14. You make even silence feel beautiful
+        </h3>
+    </section>
+
+    <!-- Reason 15 -->
+    <section id="reason15" class="page-section">
+        <div class="heart-container"></div>
+        <h3 class="text-3xl md:text-4xl font-semibold text-indigo-700 mb-4">
+            15. You are my favourite kind of forever
+        </h3>
+    </section>
+
+    <!-- Reason 16 -->
+    <section id="reason16" class="page-section">
+        <div class="heart-container"></div>
+        <h3 class="text-3xl md:text-4xl font-semibold text-pink-700 mb-4">
+            16. 16 is just a number betu, you're just cutest!
+        </h3>
+    </section>
+
+    <!-- Final Page: Spotify Link -->
+    <section id="final-page" class="page-section">
+        <div class="heart-container"></div>
+        <h2 class="text-4xl md:text-5xl font-bold text-purple-700 mb-6">
+            And now listen to the playlist I made for you!
+        </h2>
+        <!-- Spotify playlist link -->
+        <a href="https://open.spotify.com/playlist/3a6DCoZ8Cj8JldTNFjHjvO?si=dC5Gvg-LT4KTzepBMa-HaA&pi=YMU84a53R2-55" target="_blank" class="mt-8 px-6 py-3 bg-green-500 text-white font-bold rounded-full shadow-lg hover:bg-green-600 transition-colors duration-300">
+            Click here for the playlist!
+        </a>
+    </section>
+
+    <script>
+        // JavaScript for falling hearts animation
+        window.onload = function() { // Ensure script runs after full page load
+            const heartContainers = document.querySelectorAll('.heart-container');
+
+            heartContainers.forEach(container => {
+                // Function to create a single heart
+                function createHeart() {
+                    const heart = document.createElement('div');
+                    heart.classList.add('heart');
+                    heart.innerHTML = '💖'; // Heart emoji
+                    
+                    // Random starting position (x-axis)
+                    const startX = Math.random() * 100;
+                    heart.style.left = `${startX}vw`;
+
+                    // Random animation duration for variety
+                    const duration = Math.random() * 5 + 5; // 5 to 10 seconds
+                    heart.style.animationDuration = `${duration}s`;
+
+                    // Random delay to stagger appearance
+                    const delay = Math.random() * 2; // 0 to 2 seconds
+                    heart.style.animationDelay = `${delay}s`;
+
+                    // Random horizontal drift (x-offset for animation)
+                    const xOffset = (Math.random() - 0.5) * 20; // -10 to 10 vw
+                    heart.style.setProperty('--x-offset', `${xOffset}vw`);
+
+                    // Random font size for variety
+                    const fontSize = Math.random() * 1.5 + 1; // 1rem to 2.5rem
+                    heart.style.fontSize = `${fontSize}rem`;
+
+                    container.appendChild(heart);
+
+                    // Remove heart after animation completes to prevent memory leak
+                    heart.addEventListener('animationend', () => {
+                        heart.remove();
+                    });
+                }
+
+                // Create hearts at intervals
+                setInterval(createHeart, 500); // Create a new heart every 0.5 seconds
+            });
+        };
+    </script>
+</body>
+</html>
